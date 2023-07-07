@@ -1,4 +1,4 @@
-package com.dmdev.http.socket;
+package http.socket;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

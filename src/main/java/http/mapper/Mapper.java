@@ -1,2 +1,6 @@
-package http.mapper;public class Mapper  {
+package http.mapper;
+
+public interface Mapper<F, T> {
+
+    T mapFrom(F object);
 }

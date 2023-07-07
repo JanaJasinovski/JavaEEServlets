@@ -23,7 +23,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
         },
         dispatcherTypes = DispatcherType.REQUEST
 )
-public class CharsetFilter implements Filter {
+public class ACharsetFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         servletRequest.setCharacterEncoding(UTF_8.name());

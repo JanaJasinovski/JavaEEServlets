@@ -1,4 +1,4 @@
-package com.dmdev.http.client;
+package http.client;
 
 import java.io.IOException;
 import java.io.OutputStream;

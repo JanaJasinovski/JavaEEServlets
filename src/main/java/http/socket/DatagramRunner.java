@@ -1,4 +1,4 @@
-package com.dmdev.http.socket;
+package http.socket;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

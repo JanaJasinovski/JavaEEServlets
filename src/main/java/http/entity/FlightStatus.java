@@ -1,2 +1,8 @@
-package http.entity;public class FlightStatus  {
+package http.entity;
+
+public enum FlightStatus {
+    ARRIVED,
+    DEPARTED,
+    CANCELLED,
+    SCHEDULED
 }

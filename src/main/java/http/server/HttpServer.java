@@ -1,4 +1,4 @@
-package com.dmdev.http.server;
+package http.server;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -44,11 +44,7 @@ public class HttpServer {
             Thread.sleep(10_000);
 
             byte[] body = Files.readAllBytes(Path.of("resources", "example.html"));
-            var headers = """
-                    HTTP/1.1 200 OK
-                    content-type: text/html
-                    content-length: %s
-                    """.formatted(body.length).getBytes();
+            var headers = String.format("HTTP/1.1 200 OK content-type: text/html content-length: %s", body.length).getBytes();
             outputStream.write(headers);
             outputStream.write(System.lineSeparator().getBytes());
             outputStream.write(body);

@@ -1,2 +1,6 @@
-package http.validator;public class Validator  {
+package http.validator;
+
+public interface Validator<T> {
+
+    ValidationResult isValid(T object);
 }

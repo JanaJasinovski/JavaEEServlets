@@ -1,4 +1,4 @@
-package com.dmdev.http.server;
+package http.server;
 
 public class HttpServerRunner {
     public static void main(String[] args) {
